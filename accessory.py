@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a4
+# Version: 0.1a5
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
@@ -36,6 +36,32 @@ def filter_data(data):
         soup = BeautifulSoup(text, 'lxml')
         text = soup.get_text(separator=' ')
         result.append(text)
+    return result
+
+
+def get_text_data(node, result=None):
+
+    if result is None:
+        result = []
+
+    if type(node) is dict:
+        for key, item in node.items():
+            if key == 'Ghosts':
+                continue
+            elif (key == 'type') and (item == 'Text'):
+                if '_value' in node:
+                    result.append(node['_value'])
+            elif (key == 'type') and (item == 'Input/Button'):
+                if '_value' in node:
+                    result.append(node['_value'])
+            elif key == 'type':
+                if 'placeholder' in node:
+                    result.append(node['placeholder'])
+            else:
+                get_text_data(item, result=result)
+    if type(node) is list:
+        for element in node:
+            get_text_data(element, result=result)
     return result
 
 
