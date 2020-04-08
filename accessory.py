@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a6
+# Version: 0.1a7
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
@@ -17,8 +17,9 @@ def clean_text_data(data):
         text = text.strip()
         while '  ' in text:
             text = text.replace('  ', ' ')
-        if text[-1] not in ['.', '…', '?', '!']:
-            text += '.'
+        if len(text) > 0:
+            if text[-1] not in ['.', '…', '?', '!']:
+                text += '.'
         result.append(text)
     return result
 
