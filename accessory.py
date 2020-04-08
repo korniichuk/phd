@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a5
+# Version: 0.1a6
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
@@ -9,7 +9,7 @@ import re
 from bs4 import BeautifulSoup
 
 
-def clean_data(data):
+def clean_text_data(data):
 
     result = []
 
@@ -23,7 +23,7 @@ def clean_data(data):
     return result
 
 
-def filter_data(data):
+def filter_text_data(data):
 
     result = []
 
