@@ -1,12 +1,26 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a3
+# Version: 0.1a4
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
 import re
 
 from bs4 import BeautifulSoup
+
+
+def clean_data(data):
+
+    result = []
+
+    for text in data:
+        text = text.strip()
+        while '  ' in text:
+            text = text.replace('  ', ' ')
+        if text[-1] not in ['.', '…', '?', '!']:
+            text += '.'
+        result.append(text)
+    return result
 
 
 def filter_data(data):
