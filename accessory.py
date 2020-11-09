@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a7
+# Version: 0.1a8
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
 import re
 
 from bs4 import BeautifulSoup
+from nltk.stem import LancasterStemmer
+from nltk.tokenize import word_tokenize
 
 
 def clean_text_data(data):
@@ -74,3 +76,15 @@ def word_counter(text):
     words = word_pattern.findall(text)
     total_words = len(words)
     return total_words
+
+
+def stemmer(text):
+
+    result = []
+
+    lancaster = LancasterStemmer()
+    words = word_tokenize(text)
+    for word in words:
+        word_stemmed = lancaster.stem(word)
+        result.append(word_stemmed)
+    return result
