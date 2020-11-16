@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 # Name: accessory
-# Version: 0.1a8
+# Version: 0.1a10
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
 import re
 
 from bs4 import BeautifulSoup
-from nltk.stem import LancasterStemmer
-from nltk.tokenize import word_tokenize
+from nltk.stem import LancasterStemmer, PorterStemmer
 
 
 def clean_text_data(data):
@@ -78,13 +77,17 @@ def word_counter(text):
     return total_words
 
 
-def stemmer(text):
+def stemming(text, method='lancaster'):
 
     result = []
 
-    lancaster = LancasterStemmer()
-    words = word_tokenize(text)
+    if method == 'lancaster':
+        stemmer = LancasterStemmer()
+    elif method == 'porter':
+        stemmer = PorterStemmer()
+    word_pattern = re.compile("(?:[a-zA-Z]+[-–’'`ʼ]?)*[a-zA-Z]+[’'`ʼ]?")
+    words = word_pattern.findall(text)
     for word in words:
-        word_stemmed = lancaster.stem(word)
+        word_stemmed = stemmer.stem(word)
         result.append(word_stemmed)
     return result
