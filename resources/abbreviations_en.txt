@@ -1,0 +1,290 @@
+a/c
+account current
+abt
+about
+ad
+advertisement
+adj.
+adjective
+adv.
+adverb
+aka
+also known as
+apr.
+April
+aren't
+are not
+arr.
+arrival
+attract.
+attractive
+aug.
+August
+c.o.d
+cash on delivery
+c/o
+care of
+can't
+cannot
+cc
+cubic centimetre
+cm.
+centimetre
+comfy
+comfortable
+conj
+conjunction
+corresp.
+correspondent
+couldn't
+could not
+dec.
+December
+deg.
+degree
+dep.
+departure
+dept.
+department
+didn't
+did not
+div.
+divorced
+doesn't
+does not
+don't
+do not
+e.g.
+exempli gratia
+ed.
+editor
+esp.
+especially
+etc
+etcetera
+feb.
+February
+flotus
+First Lady of the United States
+flu
+influenza
+fri.
+Friday
+fridge
+refrigeration
+ft.
+foot
+gent
+gentleman
+gm.
+gram
+h.m.
+her majesty
+hadn't
+had not
+hasn't
+has not
+haven't
+have not
+he'll
+he will
+hr
+hour
+i'm
+I am
+i've
+I have
+i.e.
+id est
+ib.
+ibidem
+ibid.
+ibidem
+id.
+idem
+imposs
+impossible
+in.
+inch
+innit
+is not it
+iou
+I owe you
+isn't
+is not
+it'll
+it will
+ital.
+italics
+jan.
+January
+jr.
+junior
+jul.
+July
+jun.
+June
+kph
+kilometres per hour
+lb
+libra
+lemme
+let me
+let's
+let us
+ltd.
+limited
+m.p.h.
+miles per hour
+mar.
+March
+marr.
+marriage
+mayn't
+may not
+mightn't
+might not
+mizzy
+miserable
+mon.
+Monday
+mr
+Mister
+mrs
+Mistres
+ms
+Miss
+msg
+message
+mustn't
+must not
+n.s.
+new style
+no.
+number
+nov.
+November
+obs.
+obsolete
+oct.
+October
+oz
+ounce
+p.
+page
+p.c.
+per cent
+p.p.s.
+post post scriptum
+p.s.
+post scriptum
+p.t.o.
+please turn over
+par.
+paragraph
+pl.
+plural
+pls
+please
+poss.
+possible
+potus
+President of the United States
+pp.
+pages
+pref.
+preface
+prep.
+preposition
+qt
+quart
+quot.
+quotation
+r. and d.
+research and development
+sat.
+Saturday
+sec.
+second
+sept.
+September
+shan't
+shall not
+she'll
+she will
+shouldn't
+should not
+specs
+spectacles
+sr.
+senior
+sun.
+Sunday
+tel.
+telephone
+telly
+television
+that'll
+that will
+that's
+that is
+they'll
+they will
+they're
+they are
+they've
+they have
+thurs.
+Thursday
+thx.
+thanks
+tues.
+Tuesday
+txt
+text
+u
+you
+v-day
+Victory Day
+v.
+verb
+vator
+elevator
+vpotus
+Vice-President of the United States
+w/
+with
+w/o
+without
+wasn't
+was not
+we're
+we are
+we've
+we have
+wed.
+Wednesday
+weren't
+were not
+what's
+what is
+won't
+will not
+wouldn't
+would not
+wt
+weight
+ya
+you
+you'll
+you will
+you're
+you are
+you've
+you have
+yr
+years
+yw
+you are welcome
+zine
+magazine
