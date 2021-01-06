@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Name: features
-# Version: 0.1a2
+# Version: 0.1a3
 # Owner: Ruslan Korniichuk
 # E-mail: ruslan.korniichuk(at)gmail.com
 
@@ -91,21 +91,21 @@ def pdw(text):
     pdw = None
     difficult_words_num = 0
 
-    path = '/tmp/dale-chall_simple_words_en_stemmed.txt'
+    path = '/tmp/new_dale-chall_simple_words_en_stemmed.txt'
     if not os.path.exists(path):
-        url = 'https://raw.githubusercontent.com/korniichuk/phd/master/resources/dale-chall_simple_words_en_stemmed.txt'  # noqa: E501
+        url = 'https://raw.githubusercontent.com/korniichuk/phd/master/resources/new_dale-chall_simple_words_en_stemmed.txt'  # noqa: E501
         r = requests.get(url)
         with open(path, 'w') as f:
             f.write(r.text)
     with open(path, 'r') as f:
-        dale_chall_simple_words = f.read().splitlines()
+        new_dale_chall_simple_words = f.read().splitlines()
 
     words_num, words = word_counter(text, 'en')
     stemmer = PorterStemmer()
     for word in words:
         word_lower = word.lower().strip()
         word_stemmed = stemmer.stem(word_lower)
-        if word_stemmed not in dale_chall_simple_words:
+        if word_stemmed not in new_dale_chall_simple_words:
             difficult_words_num += 1
 
     if words_num != 0:
